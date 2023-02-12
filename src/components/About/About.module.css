@@ -1,0 +1,60 @@
+.container{
+    color: white;
+    font-family: sans-serif;
+    background-color: #023047;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: max-content;
+    align-self: center;
+    margin-top: 4em;
+    padding: 1em;
+    border-radius: 10px;
+    border: 2px solid #034e74;
+}
+
+
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divSkills{
+    flex-direction: row!important;
+
+}
+.divSkills li{
+    list-style:none
+}
+.divSkills li div{
+    flex-direction: row;
+}
+.divSkills img{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+.divSkills span{
+    margin-left: 5px;
+}
+/* .container .divYo{
+    flex-direction: row;
+} */
+.divYo img{
+    width: 10rem;
+    height: 10rem;
+    /* margin-left: 1em; */
+    border-radius: 5px;
+}
+.divYo div{
+    flex-wrap: wrap;
+    font-size: medium;
+    font-weight: bolder;
+}
+a{
+    color: aqua;
+}
+.divText{
+    width: 70vw;
+}
