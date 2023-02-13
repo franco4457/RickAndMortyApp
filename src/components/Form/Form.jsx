@@ -6,7 +6,6 @@ const malNombre = "Tu nombre debe comenzar con una mayuscula";
 const malEmail = "Tu email no es valido";
 const malapass =
   "Tu contraseña debe tener entre 6 y 20 caracteres, una mayuscula, una minuscula y un número c:";
-const disPlay = { display: "none" };
 
 const Form = ({ login, acceso }) => {
   const [userData, setUserData] = useState({
@@ -51,9 +50,20 @@ const Form = ({ login, acceso }) => {
                   name="nombre"
                   placeholder="Tu nombre..."
                   className={errores.nombre && styles.inpRed}
-                  autocomplete="off"
+                  autoComplete="off"
                 />
               </div>
+              {userData.nombre && (
+                <div>
+                  <span
+                    className={
+                      errores.nombre ? styles.badines : styles.goodines
+                    }
+                  >
+                    {errores.nombre ? malNombre : "Nombre valido"}
+                  </span>
+                </div>
+              )}
 
               <br />
 
@@ -66,16 +76,25 @@ const Form = ({ login, acceso }) => {
                   name="email"
                   placeholder="email@gmail.com"
                   className={errores.email && styles.inpRed}
-                  autocomplete="off"
+                  autoComplete="disabled"
                 />
               </div>
+              {!!userData.email && (
+                <div>
+                  <span
+                    className={errores.email ? styles.badines : styles.goodines}
+                  >
+                    {errores.email ? malEmail : "Email valido"}
+                  </span>
+                </div>
+              )}
 
               <br />
 
               <div className={styles.pass}>
                 <label htmlFor="password">Contraseña </label>
                 <input
-                  autocomplete="off"
+                  autoComplete="off"
                   onChange={handleChange}
                   value={userData.password}
                   type="password"
@@ -84,35 +103,22 @@ const Form = ({ login, acceso }) => {
                   className={errores.password && styles.inpRed}
                 />
               </div>
-            </div>
-            <div className={styles.erroresContiner}>
-              <div
-                className={errores.nombre ? styles.badines : styles.goodines}
-                style={!userData.nombre ? disPlay : {}}
-              >
-                <span>{malNombre}</span>
-              </div>
-              <div
-                className={errores.email ? styles.badines : styles.goodines}
-                style={!userData.email ? disPlay : {}}
-              >
-                <span>{malEmail}</span>
-              </div>
-              <div>
-                <div
-                  className={
-                    errores.password ? styles.badines : styles.goodines
-                  }
-                  style={!userData.password ? disPlay : {}}
-                >
-                  <span>{malapass}</span>
+              {!!userData.password && (
+                <div>
+                  <span
+                    className={
+                      errores.password ? styles.badines : styles.goodines
+                    }
+                  >
+                    {errores.password ? malapass : "Password valida"}
+                  </span>
                 </div>
-              </div>
+              )}
             </div>
           </div>
           <br />
           <div>
-            <button type="submit" className={styles.btnLogin} >
+            <button type="submit" className={styles.btnLogin}>
               Log in
             </button>
           </div>

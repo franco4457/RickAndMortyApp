@@ -7,7 +7,7 @@
   flex-direction: column;
   background-color: var(--bg-color);
   height: max-content;
-  width: 50vw;
+  width: 20em;
   align-self: center;
   padding: 2em;
   border-radius: 12px;
@@ -63,7 +63,6 @@ label {
 .divContainer form div .pass {
   display: flex;
   flex-direction: row;
-
   justify-content: flex-start;
 }
 input {
@@ -102,6 +101,6 @@ input {
 .badines{
     color: #ff595e;
 }
-.erroresContiner span{
+.divFormContainer span{
     font-weight: bold;
 }

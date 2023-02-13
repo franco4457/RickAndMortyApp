@@ -7,6 +7,7 @@ const regexPass = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$/;
 const regexNombre = /^[A-Z][a-z]+$/;
 
 
+
 const validate = ({ nombre, email, password }) => {
   let errors = {};
 

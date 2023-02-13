@@ -41,32 +41,42 @@
   font-weight: bold;
   display: grid;
   /* flex-direction: column;
-    flex-wrap: nowrap; */
+  flex-wrap: nowrap; */
   background-color: gray;
   color: white;
   font-size: 0.9em;
   border-radius: 3px;
+  max-width: 9rem;
   padding: 0px 2px;
-  /* width: max-content; */
-  margin-bottom: 1.9em;
+
+  width: max-content;
+  margin-bottom: 2.1em;
+  margin-left: 3px;
   align-self: flex-end;
 }
 .species {
   display: flex;
   /* align-items: last baseline; */
   padding-left: 0.3em;
+  height: 1.2em;
+  text-overflow: ellipsis;
+  width: 60%;
+  /* height: fit-content; */
+  flex-wrap: nowrap;
 }
 .genero {
   display: flex;
-  padding-right: 1em;
+  height: fit-content;
+  /* padding-right: 1em; */
   /* align-self: first baseline; */
 }
 .divGenSpe {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100%;
+  width: 9rem;
+
   /* font-size: 2em; */
   padding: 4px;
   /* margin: 1px; */
@@ -96,4 +106,7 @@ button {
   width: fit-content;
   border-radius: 7px;
   transition: 0.5s;
+}
+.divCard a{
+  height: 10rem;
 }
