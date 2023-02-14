@@ -1,6 +1,7 @@
 import styles from "./Form.module.css";
 import { useEffect, useState } from "react";
 import validate from "../helpers/validate";
+import fyer from "./titulorymnobg.png";
 
 const malNombre = "Tu nombre debe comenzar con una mayuscula";
 const malEmail = "Tu email no es valido";
@@ -13,7 +14,6 @@ const Form = ({ login, acceso }) => {
     email: "",
     password: "",
   });
-  // eslint-disable-next-line
   const [errores, setErrores] = useState({
     nombre: "",
     email: "",
@@ -36,7 +36,10 @@ const Form = ({ login, acceso }) => {
   };
 
   return (
-    <>
+    <div className={styles.contianer}>
+      <div className={styles.img}>
+        <img src={fyer} alt="titulopng" />
+      </div>
       <div className={styles.divContainer}>
         <form onSubmit={handleSubmit}>
           <div className={styles.divFormContainer}>
@@ -124,7 +127,7 @@ const Form = ({ login, acceso }) => {
           </div>
         </form>
       </div>
-    </>
+    </div>
   );
 };
 

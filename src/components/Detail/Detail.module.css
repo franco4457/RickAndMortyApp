@@ -4,28 +4,28 @@
   height: 70vh;
 }
 
-.general{
+.general {
   display: grid;
   /* flex-direction: column; */
-  margin-top: 2em;
+  margin-top: 2.7em;
 }
-:root{
-    --bg-color: #161032;
---border-color: #386FA4;
---sadow-c:#5C80BC
+:root {
+  --bg-color: #161032;
+  --border-color: #386fa4;
+  --sadow-c: #5c80bc;
 }
 .divName {
   color: white;
   margin-bottom: 0.5em;
   background-color: var(--bg-color);
-  padding: 0 1em;
+  padding: 1em;
   border-radius: 15px;
   border: 2px solid var(--border-color);
   box-shadow: 0.2em 0.2em 1em 2px var(--sadow-c);
   width: fit-content;
   justify-self: center;
 }
-h2{
+h2 {
   margin: 0;
 }
 
@@ -34,13 +34,9 @@ h2{
   flex-direction: column;
   color: white;
   justify-content: space-around;
-  /* background-color: aqua; */
   align-items: center;
   padding: 0 1em;
   border-radius: 10px;
-  width: 60%;
-
-  /* height: 70vh; */
 }
 
 .divStats {
@@ -51,13 +47,14 @@ h2{
   align-items: center;
   justify-content: space-evenly;
   border-radius: 15px;
-  width: 90%;
+  width: fit-content;
   padding: 0 0.5em;
   border: 2px solid var(--border-color);
-  box-shadow: 0.2em 0.2em 1em 2px  var(--sadow-c);
+  box-shadow: 0.2em 0.2em 1em 2px var(--sadow-c);
+  justify-self: center;
 }
-p{
-  margin:0.3em 0;
+p {
+  margin: 0.3em 0;
   font-weight: bold;
 }
 .divImg img {
@@ -67,15 +64,28 @@ p{
   border-radius: 10px;
 }
 .divImg {
-  width: 50%;
-    height: 70vh;
-align-self: center;
+  width: 15em;
+  height: 15em;
+  align-self: center;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: var(--bg-color);
   border-radius: 10px;
-   border: 2px solid var(--border-color);
-   box-shadow: 0.2em 0.2em 1em 2px  var(--sadow-c);
-margin: 1em 1em;
+  border: 2px solid var(--border-color);
+  box-shadow: 0.2em 0.2em 1em 2px var(--sadow-c);
+  margin: 1em 1em;
+}
+@media screen and (max-width:500px){
+  .container{
+    flex-wrap: wrap;
+    align-content: center;
+    flex-direction: column-reverse;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .divName{
+    margin: 0;
+    margin-top: 0.5em;
+  }
 }

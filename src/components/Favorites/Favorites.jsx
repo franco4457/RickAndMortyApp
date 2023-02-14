@@ -5,7 +5,6 @@ import { filterCards, orderCards, resetFavorites } from "../../redux/actions";
 import styles from "./Favorites.module.css";
 
 class Favorites extends React.Component {
-  //eslint-disable-next-line
   constructor(props) {
     super(props);
     this.state = {
@@ -19,8 +18,6 @@ class Favorites extends React.Component {
   render() {
     const handleOrden = (event) => {
       this.props.orderCards(event.target.value);
-      // let {myFavorites} = this.props;
-      // console.log(myFavorites);
       this.setState({ ...this.state, refresh: !this.state.refresh });
     };
     const handleFiltrar = (event) => {

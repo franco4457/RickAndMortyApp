@@ -26,6 +26,7 @@ const reducer = (state = initialState, { type, payload }) => {
       return {
         ...state,
         allCharacters: deleted,
+        myFavorites:deleted
       };
     case FILTER:
       return {

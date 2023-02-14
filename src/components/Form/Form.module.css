@@ -18,7 +18,6 @@
 }
 
 .divContainer:hover {
-/* background-color: #694c93; */
 background-color: #370083e3;
 }
 
@@ -84,10 +83,6 @@ input {
   background-color: #0d476b;
   color: azure;
 }
-/* input:focus{
-    border: none;
-} */
-
 .inpRed {
   outline-color: #ff595e;
 }
@@ -103,4 +98,27 @@ input {
 }
 .divFormContainer span{
     font-weight: bold;
+}
+
+
+.img img {
+  width: 35rem;
+  
+}
+.img{
+  display: flex;
+  justify-content: center;
+margin-bottom: 1em;
+}
+
+.contianer{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+@media  screen and (max-width:600px){
+  .img img{
+    width: 100vw;
+  }
 }

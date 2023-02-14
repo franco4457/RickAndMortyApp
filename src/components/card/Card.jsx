@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import { addFavorite, deleteFavorite } from "../../redux/actions";
 import React from "react";
 
-
 class Card extends React.Component {
   constructor(props) {
     super(props);
@@ -29,23 +28,27 @@ class Card extends React.Component {
         this.setState({ ...this.state, isFav: true });
       }
     }
-
   }
 
   render() {
-    const loc=window.location.pathname;
+    const loc = window.location.pathname;
     let dPlay;
-    (loc==="/favorites")&&!this.state.isFav&& (dPlay = {display:"none"});
+    loc === "/favorites" && !this.state.isFav && (dPlay = { display: "none" });
 
-    // const { id, name, species, image, gender, onClose } = this.props;
     return (
-      <div className={styles.divCard} id={this.props.id} style={dPlay} >
+      <div className={styles.divCard} id={this.props.id} style={dPlay}>
         {this.state.isFav ? (
-          <button className={styles.favbtn} onClick={() => this.handleFavorite(this.state.isFav)}>
+          <button
+            className={styles.favbtn}
+            onClick={() => this.handleFavorite(this.state.isFav)}
+          >
             ⭐
           </button>
         ) : (
-          <button className={styles.unfavbtn} onClick={() => this.handleFavorite(this.state.isFav)}>
+          <button
+            className={styles.unfavbtn}
+            onClick={() => this.handleFavorite(this.state.isFav)}
+          >
             ⭐
           </button>
         )}
@@ -54,7 +57,7 @@ class Card extends React.Component {
             className={styles.close}
             onClick={() => {
               this.props.onClose(this.props.id);
-              this.state.isFav&&this.handleFavorite(this.state.isFav);
+              this.state.isFav && this.handleFavorite(this.state.isFav);
             }}
           >
             X
@@ -75,7 +78,7 @@ class Card extends React.Component {
 }
 const mapStateToProps = (state) => {
   return {
-    myFavorites: state.myFavorites,
+    myFavorites: state.allCharacters,
   };
 };
 
@@ -87,48 +90,3 @@ const mapDispatchToProps = (dispatch) => {
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Card);
-
-// function Card({
-//   charac,
-//   id,
-//   name,
-//   species,
-//   image,
-//   gender,
-//   onClose,
-//   addFavorite,
-//   deleteFavorite,
-// }) {
-//   const [isFav, setIsFav] = useState(false);
-
-//   const handleFavorite = () => {
-//     if (isFav) {
-//       deleteFavorite(id);
-//       setIsFav(false);
-//     } else {
-//       addFavorite(charac);
-//       setIsFav(true);
-//     }
-//   };
-
-//   return (
-//     <div className={styles.divCard} id={id}>
-//       {isFav ? (
-//         <button onClick={handleFavorite}>❤️</button>
-//       ) : (
-//         <button onClick={handleFavorite}>🤍</button>
-//       )}
-//       <button className={styles.close} onClick={() => onClose(id)}>
-//         X{" "}
-//       </button>
-//       <Link to={`/detail/${id}`}>
-//         <img src={image} alt={name} />
-//       </Link>
-//       <h2 className={styles.nombre}>{name}</h2>
-//       <div className={styles.divGenSpe}>
-//         <h2 className={styles.species}>{species}</h2>
-//         <h2 className={styles.genero}>{gender} </h2>
-//       </div>
-//     </div>
-//   );
-// }

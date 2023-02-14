@@ -1,6 +1,5 @@
 .navContainer {
     position: fixed;
-    /* align-self: center; */
     display: flex;
     flex-direction: row;
     width: 95%;
@@ -34,7 +33,6 @@ color: white;
     border-radius: 3px;
     background-color: #ca2929;
     padding: 3px 6px;
-    /* justify-self: start; */
     cursor: pointer;
     font-weight: bold;
     text-decoration:none
@@ -56,7 +54,6 @@ color: white;
     font-weight: bold;
 }
 .btnAbout{
-    /* margin-left: 1em; */
     padding: 3px 6px;
     border: 1px solid rgb(180, 161, 161);
     border-radius: 3px;
@@ -79,7 +76,7 @@ color: white;
 }
 
 @media screen and (max-width: 600px) {
-    h2{
+    nav h2{
   font-size: medium;
     }
     nav span{

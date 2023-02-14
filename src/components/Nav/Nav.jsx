@@ -1,11 +1,9 @@
 import React from "react";
 import SearchBar from "../SearchBar/SearchBar";
-// import agrego from "../fnAgregar";
 import styles from "./Nav.module.css";
 import { NavLink } from "react-router-dom";
 import { connect } from "react-redux";
 
-// style={this.props.loc==="/"}
 
 const disP = { display: "none" };
 

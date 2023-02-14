@@ -30,13 +30,10 @@ class About extends React.Component {
               </li>
               <li>
                 <div>
-                  {/* <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_640.png" alt="htmlLogo" /> */}
                   <img src={htmlImg} alt="htmlLogo" />
                   <span>HTML</span>
                 </div>
               </li>
-              {/* <img src="https://w7.pngwing.com/pngs/4/808/png-transparent-css3-css3-logo-logo-language-programming-language-css-3d-icon.png" alt="JSLogo" />
-              <li>CSS</li> */}
               <li>
                 <div>
                   <img src={reactImg} alt="reactlogo" />
@@ -55,7 +52,7 @@ class About extends React.Component {
             <br />
             <span>
               Soy Franco Gutierrez, estudiante de SoyHenry. Soy de
-              Resistencia,Chaco,Argentina.Soy desarrollador FullStack con
+              Resistencia, Chaco, Argentina. Soy desarrollador FullStack con
               hablilidades en desarrollo web y BBDD.
             </span>
             <p>

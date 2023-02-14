@@ -4,7 +4,6 @@
   align-items: center;
   position: absolute;
   justify-content: space-around;
-  /* margin-top: 14vh; */
   top: 13vh;
   right: 50%;
   left: 50%;
@@ -19,15 +18,12 @@ label {
 }
 
 select {
-  /* appearance: none; */
   background-color: rgba(255, 255, 255, 0.39);
   border: none;
   padding: 0 1em 0 0;
   margin: 0;
   width: max-content;
   text-align: center;
-  /* font-family: inherit;
-  font-size: inherit; */
   cursor: pointer;
   border-radius: 3px;
 }

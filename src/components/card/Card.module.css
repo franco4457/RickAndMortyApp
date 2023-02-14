@@ -3,10 +3,7 @@
   width: max-content;
   display: grid;
   flex-direction: column;
-  /* align-items: center; */
-  /* justify-content: flex-end; */
   border-radius: 10px;
-  /* padding: 10px; */
   margin-bottom: 10px;
   box-shadow: 0em 0em 0.6em 0.2em rgba(132, 68, 252, 0.774);
 }
@@ -40,8 +37,6 @@
   position: absolute;
   font-weight: bold;
   display: grid;
-  /* flex-direction: column;
-  flex-wrap: nowrap; */
   background-color: gray;
   color: white;
   font-size: 0.9em;
@@ -56,19 +51,15 @@
 }
 .species {
   display: flex;
-  /* align-items: last baseline; */
   padding-left: 0.3em;
   height: 1.2em;
   text-overflow: ellipsis;
   width: 60%;
-  /* height: fit-content; */
   flex-wrap: nowrap;
 }
 .genero {
   display: flex;
   height: fit-content;
-  /* padding-right: 1em; */
-  /* align-self: first baseline; */
 }
 .divGenSpe {
   display: flex;
@@ -76,10 +67,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   width: 9rem;
-
-  /* font-size: 2em; */
   padding: 4px;
-  /* margin: 1px; */
 }
 button {
   cursor: pointer;

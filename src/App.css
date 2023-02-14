@@ -1,17 +1,9 @@
 .App {
    display: flex;
-   /* text-align: center; */
-  
-
-   /* background-size: cover; */
    background-size: 100%;
    flex-direction: column;
    justify-content: space-around;
-   /* align-items: space-around; */
    min-height: 100vh;
    padding: 0;
-   /* height: 100%; */
-   /* width: 100vw; */
-   
 }
 

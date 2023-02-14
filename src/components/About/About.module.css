@@ -11,9 +11,8 @@
     padding: 1em;
     border-radius: 10px;
     border: 2px solid #034e74;
+    width: 20rem;
 }
-
-
 
 .container div{
     display: flex;
@@ -38,13 +37,9 @@
 .divSkills span{
     margin-left: 5px;
 }
-/* .container .divYo{
-    flex-direction: row;
-} */
 .divYo img{
     width: 10rem;
     height: 10rem;
-    /* margin-left: 1em; */
     border-radius: 5px;
 }
 .divYo div{
@@ -56,5 +51,6 @@ a{
     color: aqua;
 }
 .divText{
-    width: 70vw;
+    width: 100%;
+    text-align: center;
 }
