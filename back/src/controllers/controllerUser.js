@@ -50,7 +50,7 @@ const loginUser = async (data) => {
   if (!user) throw new Error('Incorrect username or password')
 
   const pass = await bcrypt.compare(data.password, user.password)
-  if (pass) throw new Error('Incorrect username or password')
+  if (!pass) throw new Error('Incorrect username or password')
   const { name, id, username } = user
   const token = jwt.sign({ username, id }, process.env.SECRET_KEY)
 
