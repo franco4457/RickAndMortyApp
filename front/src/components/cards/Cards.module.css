@@ -1,0 +1,11 @@
+.divCards{
+    margin-top: 14vh;
+    display: flex;
+    width: 97vw;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: space-around;
+    align-items: space-between;
+    gap: 1em;
+}

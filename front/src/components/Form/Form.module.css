@@ -1,0 +1,136 @@
+:root {
+  --bg-color: #370083b0;
+}
+
+.divContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  height: max-content;
+  width: 20em;
+  align-self: center;
+  padding: 2em;
+  border-radius: 12px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0em 1em 0.5em #082f47;
+  transition: 0.5s;
+}
+
+.divContainer:hover {
+  background-color: #370083e3;
+}
+
+.titleh1 {
+  margin: 0 0 2rem 0;
+  color: white;
+}
+
+.divContainer form {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+.divContainer form div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+}
+
+span {
+  transition: 1s;
+}
+
+label {
+  font-weight: bold;
+}
+
+.divFormContainer {
+  flex-direction: row !important;
+}
+
+.divContainer form div .nombre {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.divContainer form div .email {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.divContainer form div .pass {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+input {
+  margin: 0 1em;
+  border: 1px;
+  border-radius: 3px;
+  border-style: none solid solid none;
+  outline-color: white;
+  transition: 1s;
+  width: 100%;
+}
+.btnLogin,.btnSwitch {
+  width: max-content;
+  align-self: center;
+  padding: 0.4rem;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  font-weight: bold;
+  background-color: #0d476b;
+  color: azure;
+}
+
+.btnLogin:hover,.btnSwitch:hover {
+  border-color: white;
+}
+.btnSwitch{
+  background-color: rgb(70, 66, 66);
+}
+
+
+.inpRed {
+  outline-color: #ff595e;
+}
+.inputsContainer {
+  justify-self: flex-start;
+}
+
+.goodines {
+  color: #8ac926;
+}
+.badines {
+  color: #ff595e;
+}
+.divFormContainer span {
+  font-weight: bold;
+}
+
+.img img {
+  width: 35rem;
+}
+.img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+}
+
+.contianer {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 600px) {
+  .img img {
+    width: 100vw;
+  }
+}
