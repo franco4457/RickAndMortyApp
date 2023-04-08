@@ -8,7 +8,8 @@ import store from './redux/store'
 import axios from 'axios'
 
 
-axios.defaults.baseURL = 'http://localhost:3001'
+// axios.defaults.baseURL = 'http://localhost:3001'
+axios.defaults.baseURL = 'https://rym-api.onrender.com'
 const root =  createRoot(document.getElementById('root'))
 
 
