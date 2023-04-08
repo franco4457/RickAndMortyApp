@@ -10,7 +10,6 @@ const sequelize = new Sequelize(
     URL,
     { logging: false, native: false }
  );
-//  postgresql://postgres:djsNJjpdoFKkj3oc0i6V@containers-us-west-202.railway.app:6830/railway
 character(sequelize)
 user(sequelize)
 
