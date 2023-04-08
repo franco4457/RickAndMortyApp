@@ -5,12 +5,12 @@ const character=require('./models/character');
 const user=require('./models/UserModel');
 
 
-const URL = `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/rym`
+const URL =process.env.DB_URL|| `postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}/rym`
 const sequelize = new Sequelize(
     URL,
     { logging: false, native: false }
  );
-
+//  postgresql://postgres:djsNJjpdoFKkj3oc0i6V@containers-us-west-202.railway.app:6830/railway
 character(sequelize)
 user(sequelize)
 
